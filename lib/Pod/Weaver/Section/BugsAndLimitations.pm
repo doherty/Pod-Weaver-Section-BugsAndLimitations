@@ -54,6 +54,9 @@ In C<weaver.ini>:
 This section plugin will produce a hunk of Pod that refers to the bugtracker
 URL.
 
+You need to use L<Dist::Zilla::Plugin::Bugtracker> in your C<dist.ini> file,
+because this plugin relies on information that other plugin generates.
+
 =function weave_section
 
 adds the C<BUGS AND LIMITATIONS> section.
