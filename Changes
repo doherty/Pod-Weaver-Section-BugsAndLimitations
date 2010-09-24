@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+1.102670  2010-09-24 17:22:26 Europe/Vienna
     - use the correct hash key to access bug tracker URL (Mike Doherty)
 
 1.102460  2010-09-03 12:26:40 Europe/Vienna
