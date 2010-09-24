@@ -12,7 +12,7 @@ use Moose::Autobox;
 
 sub weave_section {
     my ($self, $document, $input) = @_;
-    my $bugtracker = $input->{zilla}->distmeta->{resources}{bugtracker}{url}
+    my $bugtracker = $input->{zilla}->distmeta->{resources}{bugtracker}{web}
       || 'http://rt.cpan.org';
     $document->children->push(
         Pod::Elemental::Element::Nested->new(
