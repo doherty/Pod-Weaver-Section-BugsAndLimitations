@@ -57,6 +57,6 @@ URL.
 You need to use L<Dist::Zilla::Plugin::Bugtracker> in your C<dist.ini> file,
 because this plugin relies on information that other plugin generates.
 
-=function weave_section
+=method weave_section
 
 adds the C<BUGS AND LIMITATIONS> section.
