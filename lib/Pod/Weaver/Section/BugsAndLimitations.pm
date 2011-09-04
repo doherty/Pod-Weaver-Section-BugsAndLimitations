@@ -21,10 +21,8 @@ sub weave_section {
                 children => [
                     Pod::Elemental::Element::Pod5::Ordinary->new(
                         {   content => <<EOPOD,
-No bugs have been reported.
-
-Please report any bugs or feature requests through the web interface at
-L<$bugtracker>.
+Bug reports can be reported and existing reports viewed through the
+web interface at L<$bugtracker>.
 EOPOD
                         }
                     ),
