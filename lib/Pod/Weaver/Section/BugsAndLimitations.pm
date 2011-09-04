@@ -3,12 +3,37 @@ use strict;
 use warnings;
 
 package Pod::Weaver::Section::BugsAndLimitations;
-
 # ABSTRACT: Add a BUGS AND LIMITATIONS pod section
+# VERSION
 use Moose;
 with 'Pod::Weaver::Role::Section';
+
 use namespace::autoclean;
 use Moose::Autobox;
+
+=head1 SYNOPSIS
+
+In C<weaver.ini>:
+
+    [BugsAndLimitations]
+
+=for test_synopsis
+1;
+__END__
+
+=head1 OVERVIEW
+
+This section plugin will produce a hunk of Pod that refers to the bugtracker
+URL.
+
+You need to use L<Dist::Zilla::Plugin::Bugtracker> in your C<dist.ini> file,
+because this plugin relies on information that other plugin generates.
+
+=head2 weave_section
+
+adds the C<BUGS AND LIMITATIONS> section.
+
+=cut
 
 sub weave_section {
     my ($self, $document, $input) = @_;
@@ -31,30 +56,5 @@ EOPOD
         ),
     );
 }
+
 1;
-
-=begin :prelude
-
-=for test_synopsis
-1;
-__END__
-
-=end :prelude
-
-=head1 SYNOPSIS
-
-In C<weaver.ini>:
-
-    [BugsAndLimitations]
-
-=head1 OVERVIEW
-
-This section plugin will produce a hunk of Pod that refers to the bugtracker
-URL.
-
-You need to use L<Dist::Zilla::Plugin::Bugtracker> in your C<dist.ini> file,
-because this plugin relies on information that other plugin generates.
-
-=method weave_section
-
-adds the C<BUGS AND LIMITATIONS> section.
