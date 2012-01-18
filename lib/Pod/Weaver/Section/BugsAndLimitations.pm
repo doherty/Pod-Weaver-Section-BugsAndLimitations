@@ -46,7 +46,7 @@ sub weave_section {
                 children => [
                     Pod::Elemental::Element::Pod5::Ordinary->new(
                         {   content => <<EOPOD,
-Bug reports can be reported and existing reports viewed through the
+You can make new bug reports, and view existing ones, through the
 web interface at L<$bugtracker>.
 EOPOD
                         }
