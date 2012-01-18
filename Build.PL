@@ -18,10 +18,11 @@ my %module_build_args = (
   },
   "dist_abstract" => "Add a BUGS AND LIMITATIONS pod section",
   "dist_author" => [
+    "Marcel Gruenauer <marcel\@cpan.org>",
     "Mike Doherty <doherty\@cpan.org>"
   ],
   "dist_name" => "Pod-Weaver-Section-BugsAndLimitations",
-  "dist_version" => "v2.0",
+  "dist_version" => "1.20",
   "license" => "perl",
   "module_name" => "Pod::Weaver::Section::BugsAndLimitations",
   "recommends" => {},

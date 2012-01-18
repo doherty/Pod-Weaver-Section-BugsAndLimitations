@@ -10,7 +10,7 @@ use ExtUtils::MakeMaker 6.30;
 
 my %WriteMakefileArgs = (
   "ABSTRACT" => "Add a BUGS AND LIMITATIONS pod section",
-  "AUTHOR" => "Mike Doherty <doherty\@cpan.org>",
+  "AUTHOR" => "Marcel Gruenauer <marcel\@cpan.org>, Mike Doherty <doherty\@cpan.org>",
   "BUILD_REQUIRES" => {
     "File::Find" => 0,
     "File::Temp" => 0,
@@ -34,7 +34,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "v2.0",
+  "VERSION" => "1.20",
   "test" => {
     "TESTS" => "t/*.t"
   }
